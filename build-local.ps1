@@ -86,13 +86,13 @@ $manifestPath = Join-Path $buildDirectory 'MANIFEST.MF'
 $manifest = @"
 Manifest-Version: 1.0
 Name: Saiyan007
-Description: Shima Pro unlock with Google Play installer source
+Description: Custom Android app patches for Morphe
 Version: $version
 Timestamp: $([DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds())
-Source: local
-Author: Local build
-Contact: na
-Website: na
+Source: https://github.com/AsrOfficialDev/Saiyan007
+Author: AsrOfficialDev
+Contact: https://github.com/AsrOfficialDev/Saiyan007/issues
+Website: https://github.com/AsrOfficialDev/Saiyan007
 License: GPLv3
 Patcher-Version: 2.1.0
 
