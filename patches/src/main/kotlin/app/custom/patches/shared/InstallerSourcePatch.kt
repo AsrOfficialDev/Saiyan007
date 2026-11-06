@@ -6,7 +6,7 @@
  * See the included NOTICE file for GPLv3 Section 7 terms.
  */
 
-package app.custom.patches.shima
+package app.custom.patches.shared
 
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
@@ -18,7 +18,7 @@ import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction21s
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import java.util.logging.Logger
 
-// An unnamed dependency: selecting Saiyan007 also applies the installer fix.
+// An unnamed dependency: selecting an app patch also applies its installer fix.
 internal val playStoreInstallerSourcePatch = bytecodePatch {
     execute {
         var changes = 0
